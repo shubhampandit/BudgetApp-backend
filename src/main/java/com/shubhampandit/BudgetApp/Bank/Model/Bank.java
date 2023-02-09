@@ -16,8 +16,9 @@ public class Bank {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-    public Long amount;
-    public String type;
-    public Double interestRate;
+    private Long id;
+    private String name;
+    private Long amount;
+    private String type;
+    private Double interestRate;
 }
