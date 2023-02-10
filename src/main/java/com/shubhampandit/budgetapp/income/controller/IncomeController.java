@@ -24,6 +24,6 @@ public class IncomeController {
 
     @PostMapping("/")
     public ResponseEntity<Income> addIncome(@RequestBody IncomeDto incomeDto){
-        return new ResponseEntity<Income>(incomeService.addIncome(incomeDto), HttpStatus.CREATED);
+        return new ResponseEntity<>(incomeService.addIncome(incomeDto), HttpStatus.CREATED);
     }
 }
